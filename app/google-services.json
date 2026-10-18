@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "555916366894",
+    "project_id": "pencilsstencils",
+    "storage_bucket": "pencilsstencils.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555916366894:android:2802f451e2cacc002afbbf",
+        "android_client_info": {
+          "package_name": "com.example.pencilsstencils"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555916366894-r6r2epc4k32jvin8o2umgv2er77fekog.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pencilsstencils",
+            "certificate_hash": "f6f00c8854cb2ee116fd53766f01c9285c22f745"
+          }
+        },
+        {
+          "client_id": "555916366894-91u8afc37gllt1kdaack0qm2suk02ruu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIVO6lE9sqPGCqZJoTVDPSgK7JClyUaIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555916366894-91u8afc37gllt1kdaack0qm2suk02ruu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
