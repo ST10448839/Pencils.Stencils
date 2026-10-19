@@ -18,7 +18,7 @@ A Kotlin-based Android shopping app for art and stationery supplies. Users can b
 ## 🚀 Features
 
 - 🔐 Register and log in with email and password using Firebase Authentication
-- 🔑 Sign in with Google (requires Firebase and OAuth configuration)
+- 🔑 Sign in with Google
 - 🛍️ Browse products and filter by category
 - 🖼️ View product photos, descriptions, prices, and suggested products
 - 🛒 Add products to the shopping bag, change quantities, and remove items
@@ -38,7 +38,7 @@ A Kotlin-based Android shopping app for art and stationery supplies. Users can b
 - Android Credential Manager and Google sign-in
 - FastAPI
 - SQLAlchemy
-- SQLite (local API database)
+- SQLite
 - PostgreSQL support through the backend connection setting
 - Gradle
 
@@ -46,11 +46,11 @@ A Kotlin-based Android shopping app for art and stationery supplies. Users can b
 
 ## ▶️ How to Use
 
-1. Open the project in Android Studio and run the `app` configuration.
-2. Register with an email and password, or sign in with Google after Firebase is configured.
+1. Open the project in Android Studio and run the `app` configuration or install the APK file and open the app.
+2. Register with an email and password, or sign in with Google.
 3. Browse the collection and select a category or product.
 4. Add products to the shopping bag and adjust quantities as needed.
-5. Open the bag and continue to the demonstration checkout.
+5. Open the bag and continue to the prototype checkout.
 6. Use Settings to manage account and shopping preferences; open Help for app instructions.
 
 ### Run the optional product API
@@ -60,13 +60,11 @@ A Kotlin-based Android shopping app for art and stationery supplies. Users can b
 3. Check `http://localhost:8000/health` to confirm that the API is running.
 4. The Android emulator connects to `http://10.0.2.2:8000/`. The API seeds ten sample products and ten synthetic API users in its local SQLite database.
 
-The app's Firebase accounts are separate from the API's demo accounts. Azure hosting is not configured in this repository. See [`backend/README.md`](backend/README.md) for API endpoints and the Azure deployment outline.
-
 ---
 
-## 🎥 Explanation Video
+## 🎥 Link to Demonstration Video: (YouTube)
 
-Add the YouTube link here after the demonstration video has been uploaded.
+https://youtu.be/D-9ucvWjdZ4?si=Hj_z8up7dFnRue6P 
 
 ---
 
