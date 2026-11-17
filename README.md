@@ -1,12 +1,14 @@
-🎨 Pencils & Stencils
-
-## 📌 Overview
-
-A Kotlin-based Android shopping app for art and stationery supplies. Users can browse products, view product details, manage a shopping bag, and complete a demonstration checkout. Firebase Authentication supports account registration and sign-in. Product data can be loaded from the FastAPI backend, with sample products available locally.
+# ✏️ Pencils & Stencils
 
 ---
 
-## 👤 Group Members
+**📌 Overview**
+
+A Kotlin-based Android shopping app prototype for browsing creative supplies. Users can explore the collection, view product details, manage a shopping bag, and enter delivery information in a demonstration checkout. Firebase Authentication supports email/password registration and login, with Google sign-in available for an SSO feature.
+
+---
+
+**👤 Group Members**
 
 - Keenan Neil Scully – ST10438180
 - Raihaan Rajah – ST10448839
@@ -15,59 +17,85 @@ A Kotlin-based Android shopping app for art and stationery supplies. Users can b
 
 ---
 
-## 🚀 Features
+**🎥 Link to Demonstration Video: (YouTube)**
 
-- 🔐 Register and log in with email and password using Firebase Authentication
-- 🔑 Sign in with Google
-- 🛍️ Browse products and filter by category
-- 🖼️ View product photos, descriptions, prices, and suggested products
-- 🛒 Add products to the shopping bag, change quantities, and remove items
-- 📦 Enter delivery details in the prototype checkout
-- ⚙️ Change account and shopping preferences in Settings
-- ❓ Read the in-app help and user guide
-- 🗃️ Load products from the FastAPI backend or use the local sample catalogue
-- 💳 Demo checkout only: no payment is processed and card details are not saved or sent
+[https://youtu.be/D-9ucvWjdZ4?si=Hj_z8up7dFnRue6P](https://youtu.be/D-9ucvWjdZ4?si=Hj_z8up7dFnRue6P)
 
 ---
 
-## 🛠️ Technologies Used
+**🚀 Features**
+
+- Register and log in with email and password using Firebase Authentication
+- Separate Google sign-in option.
+- Home screen with shortcuts to the product collection
+- Browse products by category
+- Open product details with the name, description, price, and add-to-bag action
+- See suggested products from the collection
+- Add products to the shopping bag and receive a branded confirmation popup
+- Change item quantities or remove items from the bag
+- Review subtotal, delivery, VAT, and order total
+- Enter and validate delivery details in the demonstration checkout
+- Account and shopping settings, including password actions and product display preferences
+- Side navigation to the main app sections
+- In-app Help & User Guide focused on using the app
+- Ten sample art-supply products with matching product images
+
+---
+
+**🎨 Design Considerations**
+
+- Dark backgrounds and pale text keep the interface consistent with the supplied Pencils & Stencils design.
+- Orange marks primary actions, mint highlights supporting information, and blue shadow accents add emphasis to buttons and cards.
+- Clear headings, product names, prices, and short labels help users scan screens quickly.
+- Touch-friendly controls and Android system insets keep content visible around the status bar and navigation area.
+- Form validation and helpful error messages guide users when required or invalid information is entered.
+- Checkout is a prototype: it does not charge a card or store or send payment details. Do not enter real card information.
+
+---
+
+**🛠️ Technologies Used**
 
 - Kotlin
-- Android Studio and Android SDK
-- Firebase Authentication
-- Android Credential Manager and Google sign-in
-- FastAPI
-- SQLAlchemy
-- SQLite
-- PostgreSQL support through the backend connection setting
-- Gradle
+- Android Studio
+- Android Gradle build system
+- Firebase Authentication for account sign-in
+- Android Credential Manager for Google sign-in
+- GitHub for source-code hosting and version history
+- GitHub Actions for automated build and test checks when the repository workflow is configured
 
 ---
 
-## ▶️ How to Use
+**🔄 GitHub and GitHub Actions**
 
-1. Open the project in Android Studio and run the `app` configuration or install the APK file and open the app.
-2. Register with an email and password, or sign in with Google.
-3. Browse the collection and select a category or product.
-4. Add products to the shopping bag and adjust quantities as needed.
-5. Open the bag and continue to the prototype checkout.
-6. Use Settings to manage account and shopping preferences; open Help for app instructions.
+GitHub provides a shared place for the source code, documentation, and change history. Team members can create a branch for a feature or fix, commit related changes with clear messages, and open a pull request so the group can review the changes before merging them into the main branch.
 
-### Run the optional product API
-
-1. Install Python 3.11 or later.
-2. Run `backend/Start API.bat` on Windows and keep its terminal open.
-3. Check `http://localhost:8000/health` to confirm that the API is running.
-4. The Android emulator connects to `http://10.0.2.2:8000/`. The API seeds ten sample products and ten synthetic API users in its local SQLite database.
+GitHub Actions can automatically run the Android Gradle build and available tests when code is pushed or a pull request is opened. The Actions tab shows each run and whether it passed. A successful build confirms that the project compiles in the runner; it does not replace checking the app on an emulator or Android device.
 
 ---
 
-## 🎥 Link to Demonstration Video: (YouTube)
+**▶️ How to Use**
 
-https://youtu.be/D-9ucvWjdZ4?si=Hj_z8up7dFnRue6P 
+1. Open the application after installing it from the provided APK in the GitHub repository.
+2. Browse products from Home or Collection and select a category to filter the list.
+3. Tap a product to view its details, then add it to the shopping bag.
+4. Change quantities or remove products in the bag, then continue to the demonstration checkout.
+5. Use the side menu to access your account, settings, and Help & User Guide.
 
 ---
 
-## 📦 APK Download
+**📝 Release Notes**
 
-The APK file for the app has been added to the GitHub Repository.
+## Updated Application — Shopping, Account, and Navigation Improvements
+
+Since the initial prototype, the app has been updated with:
+
+- **Working category selection** so users can filter the collection by the selected category.
+- **Product detail pages** showing the selected product's title, description, price, add-to-bag button, and suggested items.
+- **Branded add-to-bag confirmation** using the website's orange, mint, and dark colours.
+- **Improved shopping bag** with clearer product rows, quantity controls, removal actions, and an order summary.
+- **Checkout demonstration page** for delivery address details with input validation. It does not process card payments.
+- **Firebase account access** for email/password registration and login, plus a separate Google sign-in option.
+- **Expanded settings** for account and shopping preferences, including password actions and product display options.
+- **Slide-out navigation menu** linking the main app screens.
+- **Expanded app-focused help** explaining how users navigate and shop in the app.
+- **Interface refinements** to align screens with the supplied design, improve field colours, and prevent content from sitting under Android status-bar icons.
